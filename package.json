@@ -1,0 +1,38 @@
+{
+  "name": "psilog.buhunt",
+  "version": "1.0.0",
+  "description": "psilog.bughunt",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --config config/webpack.dev.js --bail --display-error-details",
+    "serve": "lite-server -c=bs-config.json",
+    "prestart": "npm run build",
+    "start": "webpack-dev-server --config config/webpack.dev.js --inline --progress --port 8000 --open"
+  },
+  "keywords": [],
+  "author": "zorgoz",
+  "license": "Fair",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5",
+    "riot": "^3.7.0",
+    "riot-observable": "^3.0.0",
+    "riot-route": "^3.1.2"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "riot-tag-loader": "^1.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
