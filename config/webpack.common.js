@@ -67,7 +67,7 @@ module.exports = {
         jquery: 'jquery',
         'window.jQuery': 'jquery',
         riot: 'riot',
-        rr: 'riot-route',
+        route: ['riot-route', 'default'],
         Popper: ['popper.js', 'default']
     })
   ]
